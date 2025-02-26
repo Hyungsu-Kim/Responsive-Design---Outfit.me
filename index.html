@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit.me - Your Personal Style Recipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h1>Discover <strong>Your  Style Recipe</strong> Today!</h1>
+        <span class="beta-text">Currently in Beta</span>
+        <p class="top-text">Powered by Outfit.me</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <img class="img-main" src="images/mens.png" alt="Recommended outfit-Designed by Freepik">
+        <h2>Outfit.me</h2>
+        <span class="subheading">Find and create your perfect outfit</span>
+
+        <p>Tell us your style, weather, and occasion, and let AI generate the perfect outfit recipe for you!</p>
+
+        <!-- Style Recommendation Form -->
+        <form>  
+            <select required aria-label="Choose a style">
+                <option value="" disabled selected>Select your preferred style</option>
+                <option value="casual">Casual</option>
+                <option value="street">Street</option>
+                <option value="classic">Classic</option>
+                <option value="minimal">Minimal</option>
+            </select>
+
+            <input type="text" required placeholder="Enter your occasion (e.g., Work, Date)" aria-label="Occasion">            
+            <input type="text" required placeholder="Enter the weather (e.g., Sunny, Rainy)" aria-label="Weather">
+            <button class="btn btn-primary">Get Outfit Recommendation</button>
+        </form>   
+
+        <p class="fine-print">Not satisfied? Try again for a new recommendation!</p>
+    </main>
+
+</body>
+</html>

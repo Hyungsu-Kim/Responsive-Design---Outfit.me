@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    color: #404040;
+    margin: 0;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 0.25em;
+}
+
+.beta-text {
+    font-weight: 900;
+}
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    margin: 0 auto;
+    order: -1;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+
+.fine-print {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+/* =================
+    Intro
+   ================= */
+
+.intro, 
+.main-content {
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.intro {
+    background-color: #4A90E2;
+    justify-content: space-between;
+    text-align: center;
+    min-height: 250px;
+    padding-bottom: 1.5em;
+
+}
+
+
+/* ====================
+    Main content
+   ==================== */
+
+.main-content {
+    align-items: center;
+    padding-top: 2.5em;
+    color: #1C1C2D;
+
+}
+
+.img-main {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.main-content,
+.form {
+    max-width: 500px;
+}
+
+/* =================
+    Form
+   ================= */
+   
+input, select {
+    font-family: inherit;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #3E3E3E;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #5DADE2;
+    background-color: #e6e8ec;
+
+}
+
+input::placeholder {
+    color: #7A7A7A;
+    opacity: 0.8
+}
+
+select {
+    margin-bottom: 0.75em;
+}
+
+input {
+    margin-bottom: 0.75em;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 0.8em 1.6em;
+    letter-spacing: 1px;
+    font-weight: 900;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    
+}
+
+.btn-primary {
+    background-color: #4A90E2;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #1C1C2D;
+    color: #FAF3E0;
+}
+
+
+@media (min-width: 567px) {
+    body {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+        line-height: 1.35;
+    }
+
+    .subheading {
+        margin-bottom: 0.5em;
+    }
+
+    .beta-text {
+        font-size: 1.15rem;
+    }
+
+    .top-text {
+        font-size: 0.875rem;
+    }
+    .intro,
+    .main-content {
+        flex-basis: 50%;
+    }
+    
+    .intro {
+        min-height: 100vh;
+    }
+
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+}
